@@ -14,12 +14,12 @@
 
 def my_collect(array)
   counter = 0
-  yer_mom = []
+  new_array = []
   while counter < array.length
-    yer_mom << yield(array[counter])
+    new_array << yield(array[counter])
     counter += 1
   end
-  yer_mom
+  new_array
 end
 
 names = ["Tim Jones", "Tom Smith", "Jim Campagno"]
